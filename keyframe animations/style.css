@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:cornflowerblue;
+    flex-direction: column;
+    gap: 100px;
+}
+.container{
+   width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.box{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    /* transition: transform 0.5s ease-in-out; */
+   animation-name: shiftThebox;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+/* .box:hover{
+    transform: translate(140px);
+} */
+
+@keyframes shiftThebox {
+    0%{
+        transform: translate(0,0);
+        background-color: yellow;
+    }
+    25%{
+        transform: translate(140px,0);
+        background-color: red;
+    }
+    50%{
+        transform: translate(140px,140px);
+        background-color: green;
+    }
+    75%{
+        transform: translate(0,140px);
+        background-color: blue;
+    }
+    100%{
+        transform: translate(0,0);
+        background-color: yellow;
+    }
+    
+}
+
+.loader{
+    display: flex;
+    gap: 15px;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    align-items: center;
+
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite alternate;
+    animation-timing-function: ease-in-out;
+}
+.dot:nth-child(2){
+    animation-delay: 0.2s;
+}
+@keyframes bounce {
+    from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(10px);
+    }
+    
+}

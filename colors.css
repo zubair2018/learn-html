@@ -1,0 +1,31 @@
+/*
+
+there are different color formats in CSS like:
+1. Named Colors (e.g., red, blue, green)
+2. Hexadecimal Colors (e.g., #FF5733, #33FF57)
+3. RGB Colors (e.g., rgb(255, 0, 0), rgb(0, 255, 0))
+4. RGBA Colors (e.g., rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5))
+5. HSL Colors (e.g., hsl(120, 100%, 50%), hsl(240, 100%, 50%))
+
+*/
+
+
+
+
+body{
+
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    color: orange;
+    background-color: lightblue;
+}
+
+article{
+    background-color: rgb(81, 240, 81);
+    color: rgb(67, 32, 32);
+    padding: 45px;
+    margin: 45px;
+    font-size: 10px;
+    border-radius: 25px;
+}
