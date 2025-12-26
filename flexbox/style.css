@@ -1,0 +1,51 @@
+/*flexbox in CSS is a powerful layout module that allows you to design complex layouts with ease.
+ Below is an example of how to use Flexbox to create a responsive container with several boxes inside it.
+inside the boxes that can be arranged and aligned using Flexbox properties.
+ 
+ Here is a sample CSS code for a Flexbox layout:
+
+ this is not a perfect code , you have to modify it according to your need, the outcome may mot be similar to what you expect from this code.
+ you can change the dimensions, colors, and other properties as per your requirements.
+
+ in short, you have play with the code to get the desired outcome.
+
+*/
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    height: 300px;
+    border: 2px solid red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.box {
+    border: 2px solid green;
+    margin: 10px 0;
+    width: 80px;
+    background-color: lightgray;
+}
+#box-1 {
+    height: 50px;
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#box-4 {
+    height: 80px;
+    order: 3;
+    flex-grow: 2;
+    align-self: flex-start;
+}
